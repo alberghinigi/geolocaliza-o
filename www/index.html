@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+             Customize this policy to fit your own app's needs. For more guidance, see:
+             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+             Some notes:
+             * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+             * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+             * Enable inline JS: add 'unsafe-inline' to default-src
+
+             <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- 
+             <link rel="stylesheet" type="text/css" href="css/index.css">
+           - -->
+        <title>cordova-plugin-geolocation</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>cordova-plugin-geolocation</h1>
+            Latitude</br>
+            <input type="text" id="lat"></input><br></br>
+
+            Langitude</br>
+            <input type="text" id="lng"></input><br></br>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3726844285425!2d-46.47034808515125!3d-23.51909448470379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzA4LjciUyA0NsKwMjgnMDUuNCJX!5e0!3m2!1spt-BR!2sbr!4v1636139833935!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </body>
+</html>
